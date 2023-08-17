@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./checkers.css">
+</head>
+<body>
+  <div id="draw-modal" class="modal hidden">
+    <div class="message-box" id="message-box-draw">
+      <p id="text-message" class="text"> Placeholder </p>
+      <button id="btn-accept-draw" class="btn-accept">accept draw</button>
+      <button id="btn-decline-draw" class="btn-decline">decline draw</button>
+    </div>
+  </div>
+
+  <div id="resign-modal" class="modal hidden">
+    <div class="message-box" id="message-box-resign">
+      <p id="text-message" class="text"> Placeholder </p>
+      <button id="btn-accept-resign" class="btn-accept">Yes</button>
+      <button id="btn-decline-resign" class="btn-decline">No</button>
+    </div>
+  </div>
+
+  <div id="game-over-modal" class="modal hidden">
+    <div class="message-box" id="message-box-game-over">
+      <p id="text-message" class="text">Placeholder</p>
+      <button id="close-modal-btn" class="close-modal-btn">Close</button>
+    </div>
+  </div>
+  <div class="game-container">
+    <div id="menu">
+      <button id="resign-btn">resign</button> 
+      <div>CHECKERS</div>
+      <button id="draw-btn">offer draw</button>
+    </div>
+    
+    <div id="turns-display" class="turns-display white-text">White to play</div>
+    <div id="checkers_board"></div>
+  </div>
+
+  <div class="resign-modal"></div>
+  
+  <script src="./checkers.js"></script>
+</body>
+</html>
